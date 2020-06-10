@@ -24,7 +24,71 @@ I want to do it correct the first time.
 ##II. Add packages
   A. npm init -y
   B. npm install Express
-  C. 
+  C. npm install (other packages?)
+
+##III. Get on Git Hub
+  A. git init
+  B. create .gitignore and add files not needed on Git Hub
+  C. git add *
+  D. git commit -m "..."
+  E. create Git Hub repo
+  F. add .gitignore to repo
+  G. git add *
+  H. git commit -m "..."
+  I. git remote add origin "repo link"
+  J. git push -u origin master
+  K. git status
+
+##IV. Set up client side
+  A. app.js
+    1. basic set up
+    $(document).ready(function () {});
+
+  B. index.html
+    1. basic set up--html5
+    2. link css--inside head
+    <link rel="stylesheet" href="style.css" />
+    3. link js--bottom of body, below jQuery file
+    <script src="..."></script>
+    4. link jQuery (minified)--bottom of body, above js file
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  C. style.css
+
+##V. Set up Server side
+  A. server.js--set up   
+        const express = require...
+        const app = express...
+        const PORT = ("#")...
+        const path = require...
+
+        app.use(express.urlencoded...
+        app.use(express.json...
+        app.use(express.static...
+
+        app.listen(PORT, ()=> {...
+
+  B. api-routers.js--set up
+        const express = require...
+        const router = express...
+        const path = require...
+
+        router.get("./api",)...
+
+        module.exports = router;
+
+  C. client-routers.js--set up
+        const express = require...
+        const router = express...
+        const path = require
+
+        router.get(`/`, )...
+
+        module.exports = router;
+
+        
+
+  D. server.js--set up routers
 
 
 

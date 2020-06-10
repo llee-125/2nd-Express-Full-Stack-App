@@ -43,15 +43,9 @@ I want to do it correct the first time.
   A. app.js
     1. basic set up
     $(document).ready(function () {});
+    2. add ajax
 
-  B. index.html
-    1. basic set up--html5
-    2. link css--inside head
-    <link rel="stylesheet" href="style.css" />
-    3. link js--bottom of body, below jQuery file
-    <script src="..."></script>
-    4. link jQuery (minified)--bottom of body, above js file
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  
 
   C. style.css
 
@@ -68,7 +62,16 @@ I want to do it correct the first time.
 
         app.listen(PORT, ()=> {...
 
-  B. api-routers.js--set up
+  B. Set Up index.html
+    1. basic set up--html5
+    2. link css--inside head
+    <link rel="stylesheet" href="style.css" />
+    3. link js--bottom of body, below jQuery file
+    <script src="..."></script>
+    4. link jQuery (minified)--bottom of body, above js file
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  
+  C. api-routers.js--set up
         const express = require...
         const router = express...
         const path = require...
